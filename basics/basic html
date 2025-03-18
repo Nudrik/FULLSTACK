@@ -1,28 +1,47 @@
-<HTML>
-    <HEAD>
-        <TITLE> FULL STACK WEB DEVELOPMENT</TITLE>
-    </HEAD>
-    <BODY>
-        <p>
-            <H2>FULL STACK WEB DEVELOPMENT PROGRAM </H2>
-            <a href="https://www.youtube.com/" target="_blank">youtube</a>
-            <br>
-            <span>HELLO</span>
-            <br>
-                <br>
-                <ul>
-                    <li>applet</li>
-                    <li>banana</li>
-                </ul>
-                <ol>
-                    <li>apple</li>
-                    <li>mango</li>
-                </ol>GIT CONFI
-                    <br>
-                    <audio controls>
-                        <source src="Premalo.mp3"
-                                type="audio/mp3">
-                    </audio>   
-                          
-    </BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Stack Web Development</title>
+</head>
+<body>
+    <h2>Full Stack Web Development Program</h2>
+
+    <p>
+        <a href="https://www.youtube.com/" target="_blank"><span>YouTube</span></a>
+        <br>
+        <span>HELLO</span>
+        <br><br>
+    </p>
+
+    <p>
+        <b>Bold Text</b>, <i>Italic Text</i>, <u>Underlined Text</u>, 
+        <strong>Strong Text</strong>, <em>Emphasized Text</em>, 
+        <small>Small Text</small>, <mark>Highlighted Text</mark>, 
+        <sub>Subscript</sub>, <sup>Superscript</sup>, 
+        <code>Inline Code</code>, <abbr title="HyperText Markup Language">HTML</abbr>, 
+        <q>Inline Quote</q>, <cite>Citation Example</cite>, 
+        <time datetime="2025-03-17">March 17, 2025</time>,
+        <ins>Inserted Text</ins>, <del>Deleted Text</del>,
+        <kbd>Ctrl + C</kbd>, <var>x</var> + <var>y</var> = 10,
+        <samp>Sample Output</samp>, <dfn title="Definition Term">Definition</dfn>
+    </p>
+
+    <ul>
+        <li><span>Applet</span></li>
+        <li><span>Banana</span></li>
+    </ul>
+
+    <ol>
+        <li><span>Apple</span></li>
+        <li><span>Mango</span></li>
+    </ol>
+
+    <p><span>GIT CONFI</span></p>
+
+    <audio controls>
+        <source src="Premalo.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>  
+
+</body>
+</html>
