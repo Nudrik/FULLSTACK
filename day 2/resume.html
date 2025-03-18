@@ -60,6 +60,28 @@
         a:hover {
             color: #2980b9;
         }
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #2980b9;
+        }
+        .circular-image {
+            width: 100px; /* or desired size */
+            height: 100px; /* or desired size */
+            border-radius: 50%;
+            float: right; /* Aligns the image to the right */
+            margin-left: 20px; /* Optional: adds space between the image and text */
+        }
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -70,9 +92,13 @@
 <body>
 
     <h1>BAHATAM NUDRIK RAJU</h1>
+    <a href="C:\Users\shyam\OneDrive\Desktop\fullstack\day 2\Portfolio Nudrik\index.html">
+        <img src="nudrik passphoto.jpg" alt="Circular Image" class="circular-image">
+    </a>
+
     <div class="contact-info">
         <p><i class="fas fa-envelope icon"></i>Email: nudrikraju396@gmail.com</p>
-        <p><i class="fas fa-phone icon"></i>Phone: 8500632072</p>
+        <p><i class="fas fa-phone icon"></i>Phone: 8500632073</p>
         <p><i class="fab fa-linkedin icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/nudrik-raju-0849b830b">www.linkedin.com/in/nudrik-raju-0849b830b</a></p>
         <p><i class="fab fa-github icon"></i>GitHub: <a href="https://www.github.com/nudrikraju">www.github.com/nudrikraju</a></p>
     </div>
@@ -156,12 +182,17 @@
     </div>
 
     <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Portfolio Website</strong> - Built a personal portfolio showcasing my work.</li>
-            <li><strong>E-commerce Website</strong> - Developed a fully functional online store.</li>
-        </ul>
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Portfolio Website</strong> - Built a personal portfolio showcasing my work.
+        </li>
+
+        <li><strong>E-commerce Website</strong> - Developed a fully functional online store.</li>
+    </ul>
     </div>
+    <a href="file:///C:/Users/shyam/OneDrive/Desktop/fullstack/day%202/contact%20form.html" class="contact-button">Contact Us</a>
+
 
 </body>
 </html>
