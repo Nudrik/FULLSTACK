@@ -8,17 +8,24 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4; /* Changed background to light gray */
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         form {
+            width: 100%;
             background: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 5px solid; /* Added colorful border */
-            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Colorful border */
+            border: 5px solid;
+            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+            box-sizing: border-box;
         }
         label {
             display: block;
@@ -36,7 +43,7 @@
         }
         input[type="text"]:focus,
         input[type="email"]:focus {
-            border-color: #3498db; /* Change border color on focus */
+            border-color: #3498db;
         }
         button {
             background-color: #007BFF;
@@ -45,22 +52,19 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
         button:hover {
             background-color: #0056b3;
         }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
+        button:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-<form action="/submit-form" method="post" style="width: 100%; height: auto;">
-
+    <form action="/submit-form" method="post">
+        <h1>Contact Us</h1>
         <label for="contact-name">Full Name:</label>
         <input type="text" id="contact-name" name="contact-name" required>
 
@@ -79,13 +83,7 @@
         <label for="contact-subject">Subject:</label>
         <input type="text" id="contact-subject" name="contact-subject" required>
 
-    <button type="submit" onclick="handleSubmit()">Send Message</button>
-
+        <button type="submit">Send Message</button>
     </form>
-<script>
-    function handleSubmit() {
-        alert("Your message has been sent!");
-    }
-</script>
-
+</body>
 </html>
