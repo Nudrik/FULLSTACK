@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="basic-selectors-title">Basic Selectors</h1>
+        <p class="example-class">class selector.</p>
+        <div id="example-id">ID selector.</div>
+        <p>This is a paragraph.</p>
+        
+        <h2 class="combinator-selectors-title">Combinator Selectors</h2>
+        <div class="parent-container">
+            <p class="child-example">Child Selector</p>
+            <div class="descendant-container">
+                <p>Descendant Selector Example</p>
+                <p class="sibling-example">Adjacent Sibling</p>
+                <p class="sibling-example">General Sibling</p>
+            </div>
+        </div>
+        
+        <h2 class="pseudo-classes-title">Pseudo-Classes</h2>
+        <div class="pseudo-classes-container">
+            <button class="hover-button">Hover </button>
+            <input type="text" class="focus-input" placeholder="Focus on me" />
+            <p class="first-child-example">first child.</p>
+            <p>not the last child.</p>
+            <p class="last-child-example">last child.</p>
+            <p class="not-example">I should be stylish.</p>
+        </div>
+
+        <input type="text" placeholder="Placeholder Example" />
+    </div>
+</body>
+</html>

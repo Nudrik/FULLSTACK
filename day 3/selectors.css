@@ -1,0 +1,76 @@
+/* Basic Selectors */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+}
+
+.example-class {
+    color: green;
+}
+
+#example-id {
+    color: red;
+}
+
+/* Combinator Selectors */
+.parent-container > .child-example {
+    color: orange;
+}
+
+.parent-container .descendant-container p {
+    color: teal;
+}
+
+.descendant-container + .sibling-example {
+    color: brown;
+}
+
+.sibling-example ~ .sibling-example {
+    color: gray;
+}
+
+/* Attribute Selectors */
+input[type="text"] {
+    border: 1px solid black;
+}
+
+/* Pseudo-Classes */
+.hover-button:hover {
+    background-color: lightblue;
+}
+
+.focus-input:focus {
+    border: 2px solid green;
+}
+
+.first-child-example:first-child {
+    font-weight: bold;
+}
+
+.last-child-example:last-child {
+    color: red;
+}
+
+.not-example:not(.last-child) {
+    color: gray;
+}
+
+/* Pseudo-Elements */
+::after {
+    content: " - This is added after the element.";
+}
+
+::first-line {
+    font-weight: bold;
+}
+
+::first-letter {
+    font-size: 2em;
+}
+
+::placeholder {
+    color: gray;
+}
