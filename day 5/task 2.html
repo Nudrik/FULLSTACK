@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elbert Technology</title>
     <style>
-        /* Global Styles */
+
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +23,7 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+
         header {
             background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@
             margin: 2px 0;
         }
 
-        /* Navigation Styles */
+
         nav {
             display: flex;
             align-items: center;
@@ -112,7 +112,7 @@
             background-color: #006da0;
         }
 
-        /* Hero Section */
+
         .hero {
             padding: 80px 0;
         }
@@ -151,9 +151,12 @@
             width: 100%;
         }
 
-        /* Products Section */
+
         .products {
             padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .products-header {
@@ -170,22 +173,16 @@
         }
 
         .product-card {
-           position: relative;
+            position: relative;
             border-radius: 30px;
-           padding: 200px;
-           width:1300px;
-           height: 50px;
-           margin: 120px auto;
-           text-align: left;
-            box-shadow: 0 4px 8px #0000001a;
-            margin-left: 50px;
-            margin-right: 50px;
-            scroll-margin-top: 200px;
-            overflow: visible; /* Ensure content can overflow */
-        }
+            padding: 30px;
+            width: 98%; 
+            height: 325px; /* Set a consistent height */
 
-        .product-card.blue {
-            background-color: #e6f4fc;
+            margin: 95px; /* Set consistent margins */
+            text-align: left;
+            box-shadow: 0 4px 8px #0000001a;
+            background-color: #FFF9EE;
         }
 
         .product-content {
@@ -207,20 +204,20 @@
         }
 
         .product-icon {
-    position: absolute;
-    top: -50px; /* Adjust this value to control how much is outside */
-    right: 30px;
-    width: 150px;
-    height: 150px;
-}
+            position: absolute;
+            top: -50px; /* Adjust this value to control how much is outside */
+            right: 30px;
+            width: 150px;
+            height: 150px;
+        }
 
-.product-icon img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
+        .product-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
 
-        /* Footer */
+
         footer {
             padding: 50px 0 20px;
             background-color: #ffffff;
@@ -258,7 +255,7 @@
             padding: 0 40px;
         }
 
-        /* Vertical divider lines */
+
         .footer-column:before {
             content: "";
             position: absolute;
@@ -297,7 +294,7 @@
             color: #0087c7;
         }
 
-        /* Horizontal divider line */
+
         .footer-divider {
             height: 1px;
             background-color: #e0e0e0;
@@ -327,9 +324,10 @@
         }
 
         .social-icon {
-            width: 24px;
-            height: 24px;
+            width: 36px; /* Increased size */
+            height: 36px; /* Increased size */
         }
+
     </style>
 </head>
 <body>
@@ -337,12 +335,10 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-             
                 <div class="menu-icon">
                     <img src="menu icon.svg" alt="menu-icon">
                 </div>
                 <img src="Elbert_logo-BU5PwBXZ.svg" alt="Elbert Technology Logo">
-                
             </div>
             <nav>
                 <ul>
@@ -363,7 +359,6 @@
             <div class="hero-text">
                 <h1>Empowering
                      <br>
-                    
                     <span class="blue-text">Innovation</span>, 
                     <br>
                     Simplifying <span class="blue-text">Success</span></h1>
@@ -382,33 +377,27 @@
                 <h2>Our Innovative <span class="blue-text">Products</span></h2>
             </div>
             
-            <div class="product-card" style="background-color: #FFF9EE;">
+            <div class="product-card">
                 <div class="product-icon">
                     <img src="image2.svg" alt="Resume Builder Icon">
                 </div>
-                        <h3>CRM Platform: Redefining Customer Relationships</h3>
-                        <p>Our CRM platform is more than just a tool; it's a strategy for success. Designed to simplify and enhance how you connect with your clients, it centralizes your customer data, streamlines communication, and helps you make informed decisions. Gain insights, nurture relationships, and drive business growth with features like real-time analytics, automated workflows, and seamless integration across your systems. Elevate customer experiences and turn interactions into long-lasting partnerships.</p>
-                    </div>
-                    
-                </div>
+                <h3>CRM Platform: Redefining Customer Relationships</h3>
+                <p>Our CRM platform is more than just a tool; it's a strategy for success. Designed to simplify and enhance how you connect with your clients, it centralizes your customer data, streamlines communication, and helps you make informed decisions. Gain insights, nurture relationships, and drive business growth with features like real-time analytics, automated workflows, and seamless integration across your systems. Elevate customer experiences and turn interactions into long-lasting partnerships.</p>
             </div>
-            <div class="product-card" style="background-color: #FFF9EE;">
+            
+            <div class="product-card">
                 <div class="product-icon">
                     <img src="image2.svg" alt="Resume Builder Icon">
                 </div>
                 <h3>Resume Builder: Craft Your Career Path</h3>
                 <p>Standing out in today's competitive job market starts with a stellar resume. Our intuitive resume builder takes the stress out of creating professional, ATS-friendly resumes. Choose from expertly designed templates, customize your content, and let our guided approach ensure your skills and experience shine. Whether you're starting your career or looking to advance, our tool helps you present your best self to prospective employers.</p>
             </div>
-            <div class="product-card" style="background-color: #FFF9EE;">
+            <div class="product-card">
                 <div class="product-icon">
                     <img src="image2.svg" alt="Resume Builder Icon">
                 </div>
-                        <h3>Portfolio Builder</h3>
-                        <p>Build professional, customizable portfolios to highlight your work, showcase your skills, and story through customizable templates that are both modern and engaging. Whether you're a freelancer, creative, or professional, our platform empowers you to showcase your work with confidence, leaving a lasting impression on potential clients and employers.</p>
-                    </div>
-                    
-                    </div>
-                </div>
+                <h3>Portfolio Builder</h3>
+                <p>Build professional, customizable portfolios to highlight your work, showcase your skills, and story through customizable templates that are both modern and engaging. Whether you're a freelancer, creative, or professional, our platform empowers you to showcase your work with confidence, leaving a lasting impression on potential clients and employers.</p>
             </div>
         </div>
     </section>
@@ -418,7 +407,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="elbert-logo.png" alt="Elbert Technology Logo">
+                    <img src="Footer_logo-D5IX5x7B.svg" alt="Elbert Technology Logo">
                     <p class="slogan">Smart Solutions, Real Results</p>
                 </div>
                 <div class="footer-links">
@@ -449,9 +438,9 @@
             <div class="footer-bottom">
                 <p class="copyright">© 2025 Elbert Technology. All rights reserved.</p>
                 <div class="social-icons">
-                    <a href="#"><img class="social-icon" src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img class="social-icon" src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img class="social-icon" src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img class="social-icon" src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_bird_logo_2012.svg" alt="Twitter"></a>
+                    <a href="#"><img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                    <a href="#"><img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn"></a>
                 </div>
             </div>
         </div>
