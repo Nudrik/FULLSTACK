@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Flex Layout</title>
+    <style>
+        .main-container {
+            display: flex;
+            flex-direction:row; /* Stack boxes vertically */
+            align-items: flex-start; /* Align boxes to the top left */
+        }
+        .heading1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue; /* Box 1 */
+            
+        }
+        .heading2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 123, 0); /* Box 2 */
+        }
+        .heading3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 106); /* Box 3 */
+        }
+        .heading4 {
+            width: 100px;
+            height: 100px;
+            background-color: green; /* Box 4 */
+        }
+        .heading5 {
+            width: 100px;
+            height: 100px;
+            background-color: purple; /* Box 5 */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="heading1">Box 1</h1> 
+        <h2 class="heading2">Box 2</h2> 
+        <h2 class="heading3">Box 3</h2> 
+        <h2 class="heading4">Box 4</h2> 
+        <h2 class="heading5">Box 5</h2> 
+    </div>
+</body>
+</html>

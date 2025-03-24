@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Flags using Flexbox</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('C:/Users/shyam/OneDrive/Desktop/fullstack/day 3/flex/61RLIxUli1L._AC_UF1000,1000_QL80_.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .flag-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            background-color: aliceblue;
+        }
+
+        .flag {
+            width: 120px; /* Fixed width */
+            height: 80px; /* Fixed height */
+            margin: 5px; /* Reduced margin for better spacing */
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px; /* Increased font size for better visibility */
+            color: white;
+            background-size: contain; /* Ensure the background image fits within the area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+        }
+
+        .usa { background-image: url('./download.png'); background-color: transparent; }
+        .canada { background-image: url('./canada.png'); background-color: transparent; }
+        .uk { background-image: url('./uk.png'); background-color: transparent; }
+        .germany { background-image: url('./germany.png'); background-color: transparent; }
+        .france { background-image: url('./france.jpg'); background-color: transparent; }
+        .japan { background-image: url('./japan.png'); background-color: transparent; }
+        .brazil { background-image: url('./brazil.png'); background-color: transparent; }
+        .india { background-image: url('./india.png'); background-color: transparent; }
+        .australia { background-image: url('./aus.png'); background-color: transparent; }
+
+        .name-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px; /* Add some space above the names */
+        }
+        .name {
+            text-align: center; /* Center the text */
+            font-size: 14px; /* Set font size */
+            color: black; /* Set text color */
+            margin-top: 5px; /* Add some space above the name */
+        }
+    </style>
+</head>
+<body>
+    <div class="flag-container">
+        <div class="flag usa"></div>
+        <div class="flag canada"></div>
+        <div class="flag uk"></div>
+        <div class="flag germany"></div>
+        <div class="flag france"></div>
+        <div class="flag japan"></div>
+        <div class="flag brazil"></div>
+        <div class="flag india"></div>
+        <div class="flag australia"></div>
+    </div>
+    <div class="name-container">
+  
+</body>
+</html>
