@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <style>
+      .button {
+        background-color: blue;
+        color: white;
+      }
+      /* Psuedo Classes */
+      /* .button:hover {
+        background-color: skyblue;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+      }
+      #input-name:focus {
+        border: 2px solid red;
+        outline: none;
+      }
+      p:first-child {
+        color: red;
+      } */
+
+      /* Pseudo Elements */
+      /* .paragraph::first-letter {
+        color: green;
+        font-weight: bolder;
+      }
+      .paragraph::first-line {
+        color: yellow;
+        font-weight: bolder;
+      }
+      p::after {
+        content: "☝";
+      }
+      .paragraph{
+        color: orange;
+      }
+      .paragraph{
+        color: blue !important;
+      } */
+
+      h1 {
+        font-size: 30pt;
+      }
+
+      .big-para {
+        font-size: 30px;
+        height: 600px;
+      }
+
+      .paragraph {
+        position: sticky;
+        top: 0;
+        color: red;
+      }
+
+      /* Position Task */
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 150px;
+      }
+      .container {
+        position: relative;
+        width: 70%;
+        background-color: #e8f5e9;
+        padding: 20px 10px;
+        border-radius: 20px;
+      }
+      .icon-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+        position: absolute;
+        right: 25px;
+        top: -50px;
+      }
+
+      .container h1,
+      p {
+        width: 70%;
+      }
+
+      .fixed-image {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 30px;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <!-- <button class="button">This is a button</button>
+    <input type="text" name="" id="input-name" />
+    <div>
+      <p>p1</p>
+      <p>p2</p>
+      <p>p3</p>
+      <p>p4</p>
+    </div>
+    <div class="parent-para">
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est
+        itaque possimus nulla, veniam animi illum aliquid assumenda officia
+        consequatur ratione cumque id neque eveniet, modi quisquam unde quos.
+        Sint, quis libero aut blanditiis modi sed neque earum ducimus maiores
+        accusamus corrupti illo totam cum sunt necessitatibus, laboriosam illum
+        autem exercitationem eveniet dolore asperiores. Ducimus, magni?
+        Consequatur quibusdam doloribus quam!
+      </p>
+    </div>
+    <div class="big-para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+      exercitationem minus doloribus deleniti atque quasi dolorem placeat iure
+      tempora laudantium, pariatur aspernatur repellat impedit magni dolor,
+      quisquam amet necessitatibus temporibus iusto omnis dicta explicabo fugit.
+      Excepturi odio rem illo aperiam modi sint eligendi, aliquid quisquam qui
+      eum asperiores accusamus ullam expedita ducimus mollitia officiis iusto
+      quam veniam odit quae assumenda consectetur! Molestiae doloribus officia
+      hic beatae nobis architecto aspernatur error deserunt voluptatem ullam,
+      incidunt qui quos ut adipisci accusamus maiores, modi, dignissimos
+      laboriosam cum non possimus vel! Quasi, magnam, quae, quod sunt tempora
+      explicabo expedita doloremque nemo saepe soluta delectus?
+    </div> -->
+    <!-- Task using position -->
+    <img class="fixed-image" src="./image.png" alt="image" />
+
+    <!-- <div class="main-container">
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+    </div> -->
+    
+  </body>
+</html>

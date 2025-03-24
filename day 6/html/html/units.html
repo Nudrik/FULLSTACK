@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+    <style>
+      /* html {
+        font-size: 20px;
+      }
+
+      .units-header {
+        font-size: 20px;
+        display: flex;
+      }
+      .units-head1 {
+        font-size: 1rem;
+        background-color: red;
+        height: 100vh;
+        width: 50vw;
+      }
+      .units-head2 {
+        font-size: 2rem;
+        background-color: green;
+        height: 100vh;
+        width: 50vw;
+      } */
+
+      /* .percentage-unit {
+        display: flex;
+        width: 300px;
+      }
+      .p-left {
+        background-color: orangered;
+        width: 50%;
+      }
+      .p-right {
+        background-color: green;
+        width: 50%;
+      }
+      body {
+        background-color: black;
+      }
+
+      @media (min-width: 600px) and (max-width: 800px) {
+        .p-left {
+          background-color: aqua;
+          width: 80%;
+        }
+        .p-right {
+          background-color: red;
+          width: 20%;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          background-color: red;
+        }
+      } */
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 150px;
+      }
+      .container {
+        position: relative;
+        width: 70%;
+        background-color: #e8f5e9;
+        padding: 20px 10px;
+        border-radius: 20px;
+      }
+      .icon-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+        position: absolute;
+        right: 25px;
+        top: -50px;
+      }
+
+      .container h1,
+      p {
+        width: 70%;
+      }
+
+      .fixed-image {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="units-header">
+      <div class="units-head1">This is head1</div>
+      <div class="units-head2">This is head2</div>
+    </div> -->
+    <!-- <div class="percentage-unit">
+        <div class="p-left">Left</div>
+        <div class="p-right">right</div>
+    </div> -->
+    <div class="main-container">
+      <div class="container">
+        <h1>CRM Platform: Redefining Customer Relationships</h1>
+        <p>
+          Our CRM platform is more than just a tool; it's a strategy for
+          success. Designed to simplify and enhance how you connect with your
+          clients, it centralizes your customer data, streamlines communication,
+          and helps you make informed decisions. Gain insights, nurture
+          relationships, and drive business growth with features like real-time
+          analytics, automated workflows, and seamless integration across your
+          systems. Elevate customer experiences and turn interactions into
+          long-lasting partnerships.
+        </p>
+        <img class="icon-image" src="./image.png" alt="image" />
+      </div>
+    </div>
+  </body>
+</html>
