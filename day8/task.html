@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO MY WORLD</title>
+
+    <style id="dynamicStyles">
+        h1 {
+            color: blue;
+            font-size: 32px;
+        }
+        h2 {
+            color: green;
+            font-size: 24px;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+    <h2>THIS IS AN INTRODUCTION</h2>
+    <a href="https://www.google.com">Click here to visit Google</a>
+
+    <script>
+       
+    const cssContent = document.getElementById("dynamicStyles").innerHTML;
+        const styleElement = document.createElement("style");
+        styleElement.innerHTML = cssContent;
+        document.head.appendChild(styleElement);
+    </script>
+
+</body>
+</html>
