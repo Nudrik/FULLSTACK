@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./test.js">
+
+    </script> -->
+    <style>
+        .mainHeading{
+            color: aqua;
+            font-weight: 100;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer" id="root">
+
+    </div>
+    
+    <script>
+        let rootElement = document.getElementById("root");
+        rootElement.textContent = "Main Div";
+        rootElement.style.color = "red";
+        rootElement.style.fontSize = "20px";
+
+        let heading1 = document.createElement("h1");
+        heading1.textContent = "This is Heading1";
+        // heading1.style.color = "blue";
+        // heading1.classList.add("mainHeading")
+        // heading1.setAttribute("class", "mainHeading");
+        // heading1.removeAttribute("class", "mainHeading");
+        rootElement.appendChild(heading1);
+        // heading1.style.fontSize = "10px";
+        // // rootElement.removeChild(heading1)
+
+        //rootElement.classList.add("mainContainer");
+
+        heading1.addEventListener("click", function () {
+            heading1.classList.add("mainHeading")
+            });
+            // toggle = add + remove
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "g"){
+                console.log("the key pressed is: ", event.key);
+            }
+            
+        })
+
+        document.addEventListener("keyup", function (event) {
+            console.log("Anurag College")
+        })
+
+
+
+
+        
+        // let name = function() {
+        //let a = 10
+      // return (a)  
+    //}
+
+            //element.addEventListener("event", function)
+
+    </script>
+</body>
+</html>
