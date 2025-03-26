@@ -21,38 +21,42 @@
     </div>
     
     <script>
+        function initializePage() {
         let rootElement = document.getElementById("root");
-        rootElement.textContent = "Main Div";
-        rootElement.style.color = "red";
-        rootElement.style.fontSize = "20px";
 
-        let heading1 = document.createElement("h1");
-        heading1.textContent = "This is Heading1";
-        // heading1.style.color = "blue";
-        // heading1.classList.add("mainHeading")
-        // heading1.setAttribute("class", "mainHeading");
-        // heading1.removeAttribute("class", "mainHeading");
-        rootElement.appendChild(heading1);
-        // heading1.style.fontSize = "10px";
-        // // rootElement.removeChild(heading1)
+            rootElement.textContent = "Main Div";
+            rootElement.style.color = "red";
+            rootElement.style.fontSize = "20px";
+        }
 
-        //rootElement.classList.add("mainContainer");
+        function createHeading(rootElement) {
+            let heading1 = document.createElement("h1");
+            heading1.textContent = "This is Heading1";
+            rootElement.appendChild(heading1);
 
-        heading1.addEventListener("click", function () {
-            heading1.classList.add("mainHeading")
+            heading1.addEventListener("click", function () {
+                heading1.classList.add("mainHeading");
             });
-            // toggle = add + remove
+        }
 
-        document.addEventListener("keydown", function (event) {
-            if (event.key === "g"){
-                console.log("the key pressed is: ", event.key);
-            }
-            
-        })
+        function addEventListeners() {
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "g") {
+                    console.log("the key pressed is: ", event.key);
+                }
+            });
 
-        document.addEventListener("keyup", function (event) {
-            console.log("Anurag College")
-        })
+            document.addEventListener("keyup", function (event) {
+                console.log("Anurag College");
+            });
+        }
+
+        // Initialize the page
+        initializePage();
+        createHeading(rootElement);
+
+        addEventListeners();
+
 
 
 
