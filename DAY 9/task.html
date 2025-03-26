@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            width: 60px;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .main-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 5px lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h2>Number Operations</h2>
+        <label>First Number: <input type="number" id="firstNumber" value=""></label>
+        <br>
+        <label>Second Number: <input type="number" id="secondNumber" value=""></label>
+        <br>
+        <button onclick="decrement()">Dec</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="increment()">Inc</button>
+        </div>
+    
+
+    <script>
+        function decrement() {
+            let first = parseInt(document.getElementById("firstNumber").value);
+            let second = parseInt(document.getElementById("secondNumber").value);
+            document.getElementById("secondNumber").value = second - first;
+        }
+
+        function increment() {
+            let first = parseInt(document.getElementById("firstNumber").value);
+            let second = parseInt(document.getElementById("secondNumber").value);
+            document.getElementById("secondNumber").value = second + first;
+        }
+
+        function reset() {
+            document.getElementById("firstNumber").value = "";
+            document.getElementById("secondNumber").value = "";
+        }
+    </script>
+</body>
+</html>
