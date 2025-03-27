@@ -45,19 +45,30 @@
         const numberBox = document.getElementById('numberBox');
         let count = 0;
 
+        function updateColors() {
+           
+            document.getElementById('incrementBtn').style.backgroundColor = count % 2 === 0 ? '' : 'red';
+            document.getElementById('decrementBtn').style.backgroundColor = count % 2 === 0 ? 'green' : '';
+        }
+
         document.getElementById('incrementBtn').addEventListener('click', () => {
             count++;
             numberBox.textContent = count;
+            updateColors();
         });
 
         document.getElementById('decrementBtn').addEventListener('click', () => {
             count--;
             numberBox.textContent = count;
+            updateColors();
         });
 
         document.getElementById('refreshBtn').addEventListener('click', () => {
             count = 0;
             numberBox.textContent = count;
+            numberBox.style.backgroundColor = 'green'; // Reset to green on refresh
+            document.getElementById('incrementBtn').style.backgroundColor = '';
+            document.getElementById('decrementBtn').style.backgroundColor = '';
         });
     </script>
 </body>
