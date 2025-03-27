@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #numberBox {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="numberBox">0</div>
+        <button id="incrementBtn">Increment</button>
+        <button id="decrementBtn">Decrement</button>
+        <button id="refreshBtn">Refresh</button>
+    </div>
+
+    <script>
+        const numberBox = document.getElementById('numberBox');
+        let count = 0;
+
+        document.getElementById('incrementBtn').addEventListener('click', () => {
+            count++;
+            numberBox.textContent = count;
+        });
+
+        document.getElementById('decrementBtn').addEventListener('click', () => {
+            count--;
+            numberBox.textContent = count;
+        });
+
+        document.getElementById('refreshBtn').addEventListener('click', () => {
+            count = 0;
+            numberBox.textContent = count;
+        });
+    </script>
+</body>
+</html>
