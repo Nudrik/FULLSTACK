@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <style>
+       .container {
+            width: 500px;
+            background-color: antiquewhite;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+           
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: cream;">
+
+    <div class="container">
+        <ul id="employeeList">
+           
+        </ul>
+
+        <div id="sample"></div>
+
+        <ul id="unorderedList"></ul>
+    </div>
+
+    <script>
+        const employeesData = [
+            { id: 1, name: "Ram", salary: 5000 },
+            { id: 2, name: "Sid", salary: 10000 },
+            { id: 3, name: "Rochi", salary: 4000 }
+        ];
+
+        let sampleElement = document.getElementById("sample");
+        const name = "Rochi";
+        sampleElement.textContent = name;
+
+        const ulItem = document.getElementById("unorderedList");
+
+        employeesData.forEach(employee => {
+            const li = document.createElement("li");
+            li.textContent = `${employee.id}. ${employee.name}, ${employee.salary}`;
+            ulItem.appendChild(li);
+        });
+    </script>
+
+</body>
+</html>
