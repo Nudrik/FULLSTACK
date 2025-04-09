@@ -10,6 +10,8 @@ import Frame from './Frame.svg';
 import avatar from './Avatar group.svg';
 import doctor from './Doctorimg.png';
 import Vehicleloan from './Vehicleloan.png';
+import termlife from './Termlifeinsurance.png';
+import health from './Healthinsurance.png'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
