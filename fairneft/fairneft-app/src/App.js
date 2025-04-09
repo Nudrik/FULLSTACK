@@ -340,6 +340,57 @@ function App() {
             </div>
             </div>
             </section>
+{/*Term Life Insurance*/}
+            <div className="container">
+            <div className="loan-product">
+              <div className="loan-content">
+                <h2 className="section-title">INSURANCE & INVESTMENT SOLUTIONS</h2>
+                <h1 className="loan-title">Term Life Insurance</h1>
+                <p className="loan-description">
+                Life is unpredictable, but your family’s financial security shouldn’t be. With FairNeft’s Term Life Insurance,
+                 you can ensure your loved ones are financially protected in case of life’s uncertainties. Get high coverage at affordable premiums,
+                  flexible policy terms, and additional benefits like critical illness cover, accidental death benefit, 
+                and disability protection—so you can live worry-free knowing your family is always secure.
+                </p>
+                <p className="italic-text">
+                Because Your family deserves the best protection!!
+                </p>
+                <div className="loan-buttons">
+                  <button className="primary-button">Apply for Loan</button>
+                  <button className="outline-button">ASK EXPERT</button>
+                </div>
+              </div>
+              <div className="loan-image-container">
+                <img src={termlife} alt="Personal Loan" className="loan-image" />
+              </div>
+            </div>
+            </div>
+
+            {/*Health Insurance*/}
+            <div className="loan-product reverse">
+              <div className="loan-image-container">
+                <img src={health} alt="Business Loan" className="loan-image" />
+              </div>
+          <div className="loan-content">
+                <h3 className="loan-title">Health Insurance</h3>
+                <p className="loan-description">
+                Medical emergencies can happen anytime, but financial stress shouldn’t. With FairNeft’s Health Insurance, 
+                get cashless hospitalization, pre- & post-hospitalization coverage,
+                 and critical illness protection—so you and your loved ones get the best medical care without worrying about expenses.
+                  Choose from individual plans, 
+                family floater plans, senior citizen policies, and critical illness cover, all with low premiums and high coverage.
+                </p>
+                <p className="italic-text">
+                Your health is priceless—get insured today!
+                </p>
+                <div className="loan-buttons">
+                  <button className="primary-button">Apply for Loan</button>
+                  <button className="outline-button">ASK EXPERT</button>
+                </div>
+              </div>
+            </div>
+          
+            </section>
 
 
      
